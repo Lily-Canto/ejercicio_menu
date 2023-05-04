@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="ancho" >
+    <picture class="logo">
+      <img src="pullrequest-logo.svg" alt="">
+    </picture>
+  </header>
+<br><br>
+
+<div class="icono ancho" id="icono1">
+  <i class="fa-solid fa-bars"></i>
+</div>
+<br>
+  <nav class="ancho botones" id="caja_menu">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Ubicacion</a></li>
+        <li><a href="#">Contactanos</a></li>
+    </ul> 
+  </nav>
+
+
+<br>
+  <section class="ancho todo">
+    <article class="txt">
+      <h2>Creacion de paginas web</h2>
+      <br>
+      <h3>Curso basico de HTML5 Y CSS3</h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium aliquam qui fugit, at earum mollitia? Nulla explicabo tempora in, sed expedita, totam doloremque consequuntur aliquid, rerum beatae laborum atque.</p>
+<br>
+      <a href="#" id="btn_leer">Ver</a>
+    </article>
+
+    <article class="foto">
+      <figure >
+        <img id="fotocodigo" src="foto_pullrequest.svg" alt="">
+      </figure>
+    </article>
+
+  </section>
+<br>
+  <footer class="ancho">
+    <p>@Yulisa Cardenas</p>
+  </footer>
+
+  <script>
+
+$("#icono1").click(function(){
+$("#caja_menu").slideToggle();
+});
+
+$("#btn_leer").click(function(){
+
+$("#fotocodigo").slideToggle();
+
+});
+
+  </script>
+</body>
+</html>

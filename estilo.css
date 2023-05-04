@@ -1,0 +1,146 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: helvetica;
+}
+
+.ancho{
+  max-width: 1200px;
+  margin:auto
+}
+
+
+header{
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+}
+.logo img{
+  width: 300px;
+}
+
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botones ul{
+list-style: none;
+}
+
+.botones ul li{
+display: inline-block;
+}
+
+
+.botones ul li a{
+  border: 1px blue solid;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.botones a:hover{
+background-color: rgb(98, 98, 238);
+color: white;
+box-shadow: 2px 2px 30px gray;
+}
+
+.todo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px blue solid;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+
+.todo h2{
+  color: rgb(197, 134, 18);
+}
+.txt{
+  width: 800px;
+}
+.txt a{
+  text-decoration: none;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.txt a:hover{
+background-color: white;
+color: brown;
+border: 1px brown solid;
+box-shadow: 2px 2px 30px palevioletred;
+}
+
+.foto figure img{
+width: 300px;
+}
+
+figure img{
+  width: 350px;
+  display: none;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: cadetblue;
+}
+
+footer p{
+font-size: 20px;
+color: white;
+}
+
+.icono{
+  display: none;
+}
+
+@media screen  and (max-width:480px){
+  
+  .icono{
+    display: contents;
+    margin: 5px;
+  }
+
+  .botones ul li{
+    display: block;
+    }
+
+      .botones ul li a{
+      border: 1px blue solid;
+      padding: 10px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;
+    }
+
+.botones{
+  display: none;
+}
+
+}
